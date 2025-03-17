@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div> Second</div>;
+import { Homepage } from "../components/Homepage";
+export default async function Home() {
+  return (
+    <div>
+      <div className="flex"></div>
+      <Homepage />
+    </div>
+  );
 }

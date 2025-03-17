@@ -86,3 +86,60 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.movie-list {
+  width: 170px;
+  flex-direction: column;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .movie-container {
+    gap: 48px;
+  }
+}
+@media (min-width: 768px) {
+  .movie-list {
+    width: 240px;
+  }
+}
+.movie-list img {
+  height: 233.1px;
+  width: 170px;
+}
+@media (min-width: 768px) {
+  .movie-list img {
+    height: 340px;
+    width: 240px;
+  }
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer-text {
+  color: #fafafa;
+}
+.movieloading {
+  width: 335px;
+  height: 95px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-badge .inline-flex {
+  background-color: black;
+  color: white;
+}
+.selected-badge .inline-flex:hover {
+  background-color: black;
+}
+.inline-flex:hover {
+  background-color: lightgray;
+}
